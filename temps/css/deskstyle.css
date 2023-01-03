@@ -1,0 +1,354 @@
+
+
+@media screen and (min-width: 830px) {
+
+/* Header */
+
+.nav_header{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    height: 90px;
+    align-content: center;
+    min-width: 880px;
+    position: fixed;
+    color: white;
+    z-index: 10000000;
+    background-image: linear-gradient(to bottom, rgb(9, 38, 54), rgb(24, 68, 94));    
+    transition: .5s;
+    padding: 0px 150px;
+}
+
+.scroll_navBar {
+    background-image: linear-gradient(to bottom, rgba(9, 38, 54, 0.5), rgba(40, 123, 172, 0.1));
+    transform: scaleY(0.95);
+    margin-top: 5px;
+}
+
+.nav_title_desk {
+    display: none;
+}
+
+.nav_header_back {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+}
+
+#btn_bar {
+    display: none;
+}
+
+.scroll_navBtn{
+    transform: scaleX(0.90);
+    transition: 0.5s;
+}
+
+.nav__ul {
+    display: flex;
+    min-width: 850px;
+    height: 100%;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    transition: .8s;
+    z-index: 1000000;
+}
+
+
+
+
+.language_swapper{
+    display: flex;
+    align-self: center;
+    padding: 37px 40px;
+}
+
+.language_swapper_mobile {
+    display: none;
+}
+
+.menu_hidden_language{
+    display: none;
+}
+
+.check{
+    position: relative;
+    width: 60px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+.en {
+    font-size: 12px;
+}
+
+.es{
+    font-size:12px;
+}
+
+.check:before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.check:after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    transition: 0.5s;
+    border: 2px solid white;
+    background-color: rgb(24, 68, 94);
+}
+
+.check:checked:after {
+    left: 25px;
+    border: 2px solid white;
+}
+
+.mainheader__background {
+    background-image: linear-gradient(to top, rgb(24,68,94), rgb(40, 123, 172));
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 30% 50%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    transition: .5s;
+}
+
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    grid-column: 2;
+    grid-row: 1;
+
+}
+
+.titles {
+    margin-top: 20px;
+    user-select: none;
+}
+
+
+#paragraph_es {
+    font-size: 22px;
+    text-align: center;
+    align-self: center;
+    color: white;
+    min-width: 350px;
+    z-index: 25;
+    user-select: none;
+    text-shadow: 5px 5px 50px rgb(29, 83, 114), 5px 5px 20px rgb(69, 107, 11);
+}
+
+#backgroundimg-desktop {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    user-select: none;
+}
+
+#backgroundimg-mobile {
+    display: none;
+}
+
+/* projects  */
+
+.projects {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 80% 10%;
+    height: 700px;
+    transition: .8s
+}
+
+.projects_center{
+    grid-column: 2;
+    grid-row: 2;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 100%;
+    outline: 1px solid rgb(24, 68, 94);
+    padding: 40px;
+    border-radius: 80px;
+    gap: 80px;
+    background-image: linear-gradient(to bottom, rgb(9, 38, 54), rgb(24, 68, 94));   
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
+}
+.project {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+    opacity: 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+.project__active{
+    opacity: 1;
+    z-index: 1000;
+}
+.project_imgs {
+    max-width: 320px;
+    max-height: 100%;
+}
+.fa-arrow-left{
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: right;
+    margin-right: 30px;
+    color: white;
+    transition: .5s;
+    padding: 18px;
+    background-image: radial-gradient(rgb(10, 86, 129), rgb(6, 54, 82));
+    border-radius: 50%;
+}
+.fa-arrow-right{
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: left;
+    margin-left: 30px;
+    color: white;
+    transition: .5s;
+    padding: 18px;
+    background-image: radial-gradient(rgb(10, 86, 129), rgb(6, 54, 82));
+
+    border-radius: 50%;
+}
+.fa-arrow-left:hover{
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transform: scale(1.2,1.2);
+}
+.fa-arrow-right:hover{
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transform: scale(1.2,1.2);
+}
+.fa-arrow-right:active{
+    background-image: radial-gradient(rgb(15, 136, 206),rgb(4, 139, 218));
+}
+.fa-arrow-left:active{
+    background-image: radial-gradient(rgb(15, 136, 206),rgb(4, 139, 218));
+}
+.project_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+}
+
+.projects_paragraph {
+    padding: 40px;
+    font-size: 18px;
+}
+
+.desk_project_buttons {
+    margin: 10px;
+}
+
+@media screen and (min-width: 1330px) {
+    .projects {
+        height: 600px;
+    }
+}
+
+
+/* habilities */
+
+.habilities {
+    display: flex;
+    text-align: center;
+    height: 600px;
+    background-image: linear-gradient(to bottom, rgb(9, 38, 54), rgb(24, 68, 94));    
+    color: white;
+    outline: 1px solid rgb(24, 68, 94);
+    padding: 30px 100px;
+} 
+.habilities_content {
+    padding: 20px;
+}
+
+.main_habilities_container {
+    max-width: 1450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.habilities_content.open-active > *:first-child {
+    padding-bottom: 20px;
+}
+.js_logo {
+    transform: scale(1.15,1.15);
+}
+
+
+.habilities_content:hover {
+    transform: scale(1.10,1.10);
+    filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.5));
+}
+
+}
+
+
+
+@media screen and (min-width: 1030px) and (max-width:1500px){
+    .mainheader__background{
+        grid-template-columns: 20% 40% 40%
+    }
+    .nav__ul{
+        min-width: 750px;
+    }
+    .nav_header{
+        padding: 0px 50px 0px 0px;
+    }
+    .projects{
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 10% 80% 10%;
+    }
+}
+
+@media screen and (min-width: 830px) and (max-width:1030px){
+    .mainheader__background{
+        grid-template-columns: 20% 50% 30%
+    }
+    .nav__ul{
+        min-width: 550px;
+    }
+    .nav_header{
+        padding: 0px 50px 0px 0px;
+    }
+    .projects{
+        grid-template-columns: 10% 80% 10%;
+        grid-template-rows: 10% 80% 10%;
+    }
+    .project{
+        grid-template-columns: 50% 50%;
+    }
+    .habilities {
+        height: 700px;
+        padding: 0;
+    }
+    .habilities_content{
+        padding: 0;
+    }
+}
+
+    

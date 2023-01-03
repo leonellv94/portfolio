@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="../img/icon.png">
+        <title>Portafolio Leonel Vilar</Title>
+        <link rel="stylesheet" href="../temps/css/mainstyle.css">
+        <link rel="stylesheet" href="../temps/css/deskstyle.css">
+        <link rel="stylesheet" href="../temps/css/mobilestyle.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+</style>
+<script src="https://kit.fontawesome.com/8abf1c3118.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="wrapper_mainheader" id="profile">
+            <nav class="nav_header expanded">
+                <section class="nav_title nav_title_desk" >Welcome!<i id="btn_bar" class="fa-solid fa-bars"></i><i  id="btn_bar2" class="fa-solid fa-xmark"></i></section>
+                <nav class="nav_header_back">
+                    <ul class="nav__ul" id="hidden_menu">
+                        <li class="nav__ul__li"><a href="#profile"><button class="btn_header"><i class="fa fa-fw fa-home"></i> Home</button></a></li>
+                        <li class="nav__ul__li"><a href="#projects"><button class="btn_header"><i class="fa-solid fa-list-check"></i> Projects</button>  </a></li>
+                        <li class="nav__ul__li"><a href="#habilities"><button class="btn_header"><i class="fa-solid fa-user"></i> Habilities</button>  </a></li>
+                        <li class="nav__ul__li"><a href="#contact"><button class="btn_header"><i class="fa fa-fw fa-envelope"></i> Contact</button></a></li>
+                        <li class="nav__ul__li menu_hidden_language"><div class="language_swapper_mobile">
+                            <span class="en">Español</span>
+                            <input type="checkbox" class="check_mobile" checked>
+                            <span class="es">English</span>
+                        </div></li>
+                    </ul>
+                </nav>
+                <div class="language_swapper">
+                    <span class="en">Español</span>
+                    <input type="checkbox" class="check" checked>
+                    <span class="es">English</span>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="mainheader__background section"><img src="../img/backgroundportfolio-desktop.jpg" id="backgroundimg-desktop"> <img src="../img/backgroundportfolio-mobile.jpg" id="backgroundimg-mobile">
+                <article class="presentation">
+                    <h1 id="main_h1" class="titles">Hello! My name is Leonel Vilar and i'm a Front End Developer.</h1>
+                    <p id="paragraph_es">
+                        My knowledge as a programmer is based on HTML, CSS and JavaScript. I am continuously improving myself as a programmer to be able to offer you my best services! I'm aiming on learning in the near future (as my knowledge on javascript -as a junior- is solid) React. 
+                        As for my person, i have 28 years old, I'm from Argentina, my matern language is spanish, but i can speak english too.
+                        I'm continually learning and looking for ways to improve myself both as a programmer and as a person.</p>
+                </article>
+            </section>
+            <section class="main_projects title_font" id="projects"><b>Projects</b></section>
+                <div class="projects align__justify__center section">
+                    <i class="fa-sharp fa-solid fa-arrow-left" id="back"></i>
+                    <div class="projects_center" id="project-screen">
+                        <section class="project project__active" data-id="1">
+                            <img class="project_imgs img_1" src="../img/proyectos/proyecto-interactive-rating1.png">
+                            <article class="project_info">
+                                <h2 id="projects_title" class="project_description">Rating</h2>
+                                <p class="projects_paragraph">Interactive rating in which you can choose a score and send it, after that a screen is gonna appear with the score you choosed.</p>
+                                <div class="project_buttons"><a href="https://leonellv94.github.io/Interactive-rating/" target="_blank" class="btn_demo mobile_block desk_project_buttons">Demo</a> <a href="https://github.com/leonellv94/Interactive-rating" class="btn_code mobile_block desk_project_buttons" target="_blank">Code</a></div>
+                            </article>
+                        </section>
+                        <section class="project" data-id="2">
+                            <img class="project_imgs img_2" src="../img/proyectos/project-faq.jpg">
+                            <article class="project_info">
+                                <h3 id="projects_title" class="project_description">FAQ</h3>
+                                <p class="projects_paragraph">FAQ with its respective design in which you can press some 'frequent questions', then after that you'll see the answers to those questions</p>
+                                <div class="project_buttons"><a href="https://leonellv94.github.io/Faq-Accordion/" target='_blank' class="btn_demo mobile_block desk_project_buttons">Demo</a> <a href="https://github.com/leonellv94/Faq-Accordion" class="btn_code mobile_block desk_project_buttons" target="_blank">Code</a></div>
+                            </article>
+                        </section>
+                        <section class="project" data-id="3">
+                            <img class="project_imgs img_2" src="../img/proyectos/project-signup.png">
+                            <article class="project_info">
+                                <h3 id="projects_title" class="project_description">Signup</h3>
+                                <p class="projects_paragraph">On this form you can 'send' the desired information, which has some restriction on each box before you can send it, if you dont meet the requeriments, you're gonna receive an error</p>
+                                <div class="project_buttons"><a href="https://leonellv94.github.io/Signup-master/" target='_blank' class="btn_demo mobile_block desk_project_buttons">Demo</a> <a href="https://github.com/leonellv94/Signup-master" class="btn_code mobile_block desk_project_buttons" target="_blank">Code</a></div>
+                            </article>
+                        </section>
+                        <section class="project" data-id="4">
+                            <img class="project_imgs img_2" src="../img/proyectos/project-tip-calculator.png">
+                            <article class="project_info">
+                                <h3 id="projects_title" class="project_description">Tip calculator</h3>
+                                <p class="projects_paragraph">In this calculator you can obtain the amount of money that each person should pay, you can even take a percentage to leave a tip!</p>
+                                <div class="project_buttons"><a href="https://leonellv94.github.io/tip-calculator/" target='_blank' class="btn_demo mobile_block desk_project_buttons">Demo</a> <a href="https://github.com/leonellv94/tip-calculator" class="btn_code mobile_block desk_project_buttons" target="_blank">Code</a></div>
+                            </article>
+                        </section>
+                        <section class="project" data-id="5">
+                            <img class="project_imgs img_2" src="../img/proyectos/project-calculator.png">
+                            <article class="project_info">
+                                <h3 id="projects_title" class="project_description">Calculator</h3>
+                                <p class="projects_paragraph">
+                                    Calculator with its 4 basic mathematical operations, with several design themes so you can select your favorite!</p>
+                                <div class="project_buttons"><a href="https://leonellv94.github.io/calculator-app/" target='_blank' class="btn_demo mobile_block desk_project_buttons">Demo</a> <a href="https://github.com/leonellv94/calculator-app" class="btn_code mobile_block desk_project_buttons" target="_blank">Code</a></div>
+                            </article>
+                        </section>
+                    </div>
+                    <i class="fa-solid fa-arrow-right" id="next"></i>
+                </div>
+            <section class="main_habilities title_font" id="habilities"><b>Habilities</b></section>
+                <div class="habilities align__justify__center section">
+                    <section class="main_habilities_container">
+                        <div class="habilities_content html_section">    
+                            <img class="logos" src="../img/logos/logo-1.png">
+                            <p class="habilities_paragraph">
+                                <b>Knowledge: </b><br> Basic structures, lists, inputs, forms, sections, tables.
+                            </p>
+                            </div>
+                        <div class="habilities_content css_section">
+                            <img class="logos" src="../img/logos/logo-2.png">
+                            <p class="habilities_paragraph"> 
+                                <b>Knowledge: </b><br>
+                                Selectors, box model, pseudoelements, pseudoclass, grid, flex, responsive design, animations, transform. 
+                            </p>
+                        </div>
+                        <div class="habilities_content js_section">
+                            <img class="logos js_logo" src="../img/logos/logo-3.png">
+                            <p class="habilities_paragraph"> <b>Knowledge: </b><br>
+                                Variables, functions, operators, arrays, loops, object-oriented programming, object Math, DOM, object window, events, callbacks, promises, await & async, APIs.
+                            </p>
+                        </div>
+                        <div class="habilities_content react_section">
+                            <img class="logos" src="../img/logos/logo-4.png">
+                            <p class="habilities_paragraph"> <b>Knowledge: </b><br>
+                            -Still improving JavaScript, I'll learn React after-
+                            </p>
+                        </div>
+                        
+                    </section>
+                </div>
+            <section class="main_contact title_font" id="contact"><b>Contact</b></section>
+                <div class="contact align__justify__center section">
+                    <form id="form" action="" class="form">
+                        <label for="name">Full Name <span class="span_red">*</span></label>
+                        <input type="text" name="name" id="name" required placeholder="Full name">
+                        <label for="email">Email <span class="span_red">*</span></label>
+                        <input type="email" name="email" id="email" required placeholder="Email">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <span id="form__condition" class="span_red">* Required</span>
+                        <button type="submit" class="btn_submit">Send</button>
+                    </form>
+                </div>
+        </main>
+        <footer class="footer">
+            <div class="main_footer">
+                <div class="footer__redes"><b>Social Media:</b></div>
+                    <ul class="footer__list align__justify__center">
+                        <li class="footer__li"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/leonelvilar/" target="_blank"> Instagram</a></li>
+                        <li class="footer__li"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/leonel-vilar-5b5270134" target="_blank"> LinkedIn</a></li>
+                        <li class="footer_contact footer__li"><i class="fa-solid fa-at"></i><a href="mailto: leonel-vilar@hotmail.com" id="mail-btn"> Email: leonel-vilar@hotmail.com</a></li>
+                    </ul>
+
+            </div>
+        </footer>
+        <script src="../temps/js/code.js"></script>
+    </body>
+</html>
