@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
+        <title>Portafolio Leonel Vilar</Title>
+        <link rel="stylesheet" href="temps/css/mainstyle.css">
+        <link rel="stylesheet" href="temps/css/deskstyle.css">
+        <link rel="stylesheet" href="temps/css/mobilestyle.css">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+</style>
+<script src="https://kit.fontawesome.com/8abf1c3118.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="wrapper_mainheader" id="profile">
+            <nav class="nav_header expanded">
+                <section class="nav_title nav_title_desk" >Bienvenido!<i id="btn_bar" class="fa-solid fa-bars"></i><i  id="btn_bar2" class="fa-solid fa-xmark"></i></section>
+                <nav class="nav_header_back">
+                    <ul class="nav__ul" id="hidden_menu">
+                        <li class="nav__ul__li"><button class="btn_header"><i class="fa fa-fw fa-home"></i> Inicio</button></a></li>
+                        <li class="nav__ul__li"><button class="btn_header"><i class="fa-solid fa-list-check"></i> Proyectos</button>  </a></li>
+                        <li class="nav__ul__li"><button class="btn_header"><i class="fa-solid fa-user"></i> Habilidades</button>  </a></li>
+                        <li class="nav__ul__li"><button class="btn_header"><i class="fa fa-fw fa-envelope"></i> Contacto</button></a></li>
+                    </ul>
+                </nav>
+
+            </nav>
+        </header>
+        <main>
+            <section class="mainheader__background scroll_active  section">
+                <img src="img/backgroundportfolio-desktop.jpg" id="backgroundimg-desktop"> 
+                <img src="img/backgroundportfolio-mobile.jpg" id="backgroundimg-mobile">
+                <article class="presentation">
+                    <img src="img/photo.jpg" alt="Foto de Perfil" id="photo">
+                    <h1 id="main_h1" class="titles">Desarrollador de Machine Learning</h1>
+                    <p id="paragraph_es">Trabajo con Python, Numpy, Pandas y Scikit-learn para construir modelos predictivos y optimizar decisiones mediante evaluación y ajuste de modelos.
+                </article>
+
+            </section>
+            <section class="main_projects scroll_active  title_font" id="projects"><b>Proyectos</b></section>
+                <div class="projects align__justify__center section">
+                    <i class="fa-sharp fa-solid fa-arrow-left" id="back"></i>
+                    <div class="projects_center" id="project-screen">
+                        <section class="project project__active" data-id="1">
+                            <img class="project_imgs img_1" src="img/proyectos/project-heart.png">
+                            <article class="project_info">
+                                <h2 id="projects_title" class="project_description">Predicción de Enfermedad Cardíaca</h2>
+                                <p class="projects_paragraph">Desarrollo de un pipeline completo de datos: carga, preprocesamiento y entrenamiento de modelos (Regresión Logística y Random Forest).
+                                    Evaluación mediante ROC-AUC, Cross Validation y ajuste de thresholds con función de costo para minimizar errores críticos (falsos negativos).</p>
+                                <div class="project_buttons"><a href="https://leonellv94.github.io/cocktails/index.html" target="_blank" class="btn_demo mobile_block desk_project_buttons">Demo</a> <a href="https://github.com/leonellv94/cocktails" class="btn_code mobile_block desk_project_buttons" target="_blank">Codigo</a></div>
+                            </article>
+                        </section>
+                        <section class="project" data-id="2">
+                            <img class="project_imgs img_2" src="img/proyectos/project-scoring.png">
+                            <article class="project_info">
+                                <h3 id="projects_title" class="project_description">Sistema de Scoring de Clientes</h3>
+                                <p class="projects_paragraph">Desarrollo de un pipeline completo desde la generación de datos sintéticos hasta el modelado y evaluación.
+                                    Aplicación de feature engineering (ratios, variables derivadas y buckets) y comparación de modelos.
+                                    Optimización de decisiones mediante ajuste de thresholds basado en función de costo.</p>
+                                <div class="project_buttons"><a href="https://leonellv94.github.io/Faq-Accordion/" target='_blank' class="btn_demo mobile_block desk_project_buttons">Demo</a> <a href="https://github.com/leonellv94/Faq-Accordion" class="btn_code mobile_block desk_project_buttons" target="_blank">Codigo</a></div>
+                            </article>
+                        </section>
+                    </div>
+                    <i class="fa-solid fa-arrow-right" id="next"></i>
+                </div>
+            <section class="main_habilities scroll_active  title_font" id="habilities"><b>Habilidades</b></section>
+                <div class="habilities align__justify__center section">
+                    <section class="main_habilities_container">
+                        <div class="habilities_content html_section">    
+                            <img class="logos" src="img/logos/python-logo.png">
+                            <p class="habilities_paragraph">
+                                <b>Lenguaje - Python: </b><br>Desarrollo de scripts y pipelines de datos. Manipulación de datos, automatización y lógica para modelos de Machine Learning.
+                            </p>
+                            </div>
+                        <div class="habilities_content css_section">
+                            <img class="logos" src="img/logos/numpy-logo.png">
+                            <p class="habilities_paragraph">
+                                <b>Numpy - Analisis de datos: </b><br>
+                                Manipulación eficiente de arrays y operaciones numéricas. Base para procesamiento de datos y cálculos en modelos de Machine Learning. 
+                            </p>
+                        </div>
+                        <div class="habilities_content js_section">
+                            <img class="logos js_logo" src="img/logos/pandas-logo.png">
+                            <p class="habilities_paragraph"> <b>Pandas - Analisis de datos: </b><br>
+                            Análisis y transformación de datos. Limpieza, feature engineering y preparación de datasets para modelado.
+                            </p>
+                        </div>
+                        <div class="habilities_content react_section">
+                            <img class="logos" src="img/logos/ml-logo.png">
+                            <p class="habilities_paragraph"> <b>Machine Learning: </b><br>
+                                Desarrollo de modelos de Machine Learning utilizando Scikit-learn. Entrenamiento, evaluación y optimización de modelos con enfoque en métricas y costos.
+                            </p>
+                        </div>
+                        
+                    </section>
+                </div>
+            <section class="main_contact scroll_active  title_font" id="contact"><b>Contacto</b></section>
+                <div class="contact align__justify__center section">
+                    <form id="form" action="" class="form">
+                        <label for="name">Nombre completo <span class="span_red">*</span></label>
+                        <input type="text" name="name" id="name" required placeholder="Ingrese su nombre completo">
+                        <label for="email">Correo electronico <span class="span_red">*</span></label>
+                        <input type="email" name="email" id="email" required placeholder="Ingrese su Email">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        <span id="form__condition" class="span_red">* Campo obligatorio</span>
+                        <button type="submit" class="btn_submit">Enviar</button>
+                    </form>
+                </div>
+        </main>
+        <footer class="footer">
+            <div class="main_footer">
+                <div class="footer__redes"><b>Redes Sociales:</b></div>
+                    <ul class="footer__list align__justify__center">
+                        <li class="footer__li"><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/leonelvilar/" target="_blank"> Instagram</a></li>
+                        <li class="footer__li"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/leonel-vilar-5b5270134" target="_blank"> LinkedIn</a></li>
+                        <li class="footer_contact footer__li"><i class="fa-solid fa-at"></i><a href="mailto: leonel-vilar@hotmail.com" id="mail-btn"> Email:  leonel-vilar@hotmail.com</a> </li>
+                    </ul>
+
+            </div>
+        </footer>
+        <script src="temps/js/code.js"></script>
+    </body>
+</html>
